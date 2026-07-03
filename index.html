@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lucas Macedo | Dev em Evolução</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>LM<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#sobre" class="nav-link">Sobre</a></li>
+        <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+        <li><a href="#projetos" class="nav-link">Projetos</a></li>
+        <li><a href="#experiencia" class="nav-link">Experiência</a></li>
+        <li><a href="#contato" class="nav-link">Contato</a></li>
+      </ul>
+      <a href="curriculo_LucasMacedo.pdf" download class="btn-cv nav-cv">
+        <i class="fas fa-download"></i> Currículo
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+      <div class="hero-glow glow-1"></div>
+      <div class="hero-glow glow-2"></div>
+    </div>
+    <div class="hero-container">
+      <div class="hero-content">
+        <p class="hero-tag"><span class="tag-dot"></span> Disponível para oportunidades</p>
+        <h1 class="hero-title">
+          Olá, sou <span class="highlight">Lucas Macedo</span>
+        </h1>
+        <h2 class="hero-subtitle">
+          <span class="typed-text" id="typedText"></span><span class="cursor">|</span>
+        </h2>
+        <p class="hero-desc">
+          Estudante de Ciência da Computação apaixonado por tecnologia, com experiência em suporte técnico e em transição para o desenvolvimento web. Comprometido em aprender, evoluir e entregar soluções que fazem a diferença.
+        </p>
+        <div class="hero-actions">
+          <a href="#projetos" class="btn-primary">
+            <i class="fas fa-code"></i> Ver Projetos
+          </a>
+          <a href="curriculo_LucasMacedo.pdf" download class="btn-secondary">
+            <i class="fas fa-download"></i> Baixar Currículo
+          </a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com/lucasmacedo-dev" target="_blank" class="social-link" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://linkedin.com/in/lucasmacedo-dev" target="_blank" class="social-link" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="mailto:contato.lucasmacedodev@gmail.com" class="social-link" aria-label="E-mail">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="https://wa.me/5522988482126" target="_blank" class="social-link" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <div class="photo-wrapper">
+          <div class="photo-ring"></div>
+          <div class="photo-container">
+            <!-- Substitua "foto.jpg" pela sua foto -->
+            <img src="foto.jpeg" alt="Lucas Macedo" class="profile-photo" id="profilePhoto" onerror="this.style.display='none'; document.getElementById('photoPlaceholder').style.display='flex';" />
+            <div class="photo-placeholder" id="photoPlaceholder">
+              <i class="fas fa-user"></i>
+              <span>Sua foto aqui</span>
+            </div>
+          </div>
+          <div class="photo-badge">
+            <i class="fas fa-laptop-code"></i>
+            <span>Dev em Evolução</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Role para baixo</span>
+      <i class="fas fa-chevron-down bounce"></i>
+    </div>
+  </section>
+
+  <!-- ===== SOBRE ===== -->
+  <section class="sobre" id="sobre">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// sobre mim</span>
+        <h2 class="section-title">Quem sou eu?</h2>
+      </div>
+      <div class="sobre-grid">
+        <div class="sobre-text">
+          <p>
+            Sou <strong>Lucas Macedo</strong>, tenho 24 anos e moro em Araruama – RJ. Sou estudante de <strong>Ciência da Computação</strong> na Universidade Cruzeiro do Sul e trabalho atualmente como Auxiliar Administrativo na <strong>ConectJet Lagos Telecom</strong>, onde lido diariamente com suporte técnico, redes e atendimento ao cliente.
+          </p>
+          <p>
+            Minha trajetória sempre esteve ligada à tecnologia desde a manutenção de computadores até o suporte técnico em telecomunicações. Hoje, estou em transição para o <strong>desenvolvimento web</strong>, combinando minha bagagem técnica com novas habilidades em programação para construir soluções digitais completas.
+          </p>
+          <p>
+            Acredito que o aprendizado contínuo é o maior diferencial de um profissional. Cada projeto é uma oportunidade de crescer, e estou comprometido em evoluir dia após dia.
+          </p>
+          <div class="sobre-stats">
+            <div class="stat-item">
+              <span class="stat-number">2+</span>
+              <span class="stat-label">Anos em TI</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">6+</span>
+              <span class="stat-label">Projetos no GitHub</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">5+</span>
+              <span class="stat-label">Certificações</span>
+            </div>
+          </div>
+        </div>
+        <div class="sobre-info">
+          <div class="info-card">
+            <h3><i class="fas fa-graduation-cap"></i> Formação</h3>
+            <ul>
+              <li>
+                <strong>Ciência da Computação</strong>
+                <span>Universidade Cruzeiro do Sul — Cursando</span>
+              </li>
+              <li>
+                <strong>Ensino Médio</strong>
+                <span>Instituto Federal Fluminense</span>
+              </li>
+            </ul>
+          </div>
+          <div class="info-card">
+            <h3><i class="fas fa-map-marker-alt"></i> Localização</h3>
+            <p>Coqueiral, Araruama – RJ</p>
+          </div>
+          <div class="info-card">
+            <h3><i class="fas fa-certificate"></i> Certificações em Destaque</h3>
+            <ul>
+              <li><span class="cert-badge">Google</span> Suporte de TI — 2025</li>
+              <li><span class="cert-badge">Forum Telecom</span> Analista de Redes — 2026</li>
+              <li><span class="cert-badge">V4 Company</span> Atendimento ao Cliente — 2022</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HABILIDADES ===== -->
+  <section class="habilidades" id="habilidades">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// habilidades</span>
+        <h2 class="section-title">O que sei fazer</h2>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-category">
+          <h3 class="skill-cat-title"><i class="fas fa-code"></i> Desenvolvimento Web</h3>
+          <div class="skill-items">
+            <div class="skill-item" data-level="70">
+              <div class="skill-info">
+                <span>HTML5</span><span class="skill-pct">70%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+            </div>
+            <div class="skill-item" data-level="60">
+              <div class="skill-info">
+                <span>CSS3</span><span class="skill-pct">60%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="60"></div></div>
+            </div>
+            <div class="skill-item" data-level="45">
+              <div class="skill-info">
+                <span>JavaScript</span><span class="skill-pct">45%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="45"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="skill-cat-title"><i class="fas fa-network-wired"></i> Redes & Infraestrutura</h3>
+          <div class="skill-items">
+            <div class="skill-item" data-level="75">
+              <div class="skill-info">
+                <span>Suporte Técnico</span><span class="skill-pct">75%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+            </div>
+            <div class="skill-item" data-level="65">
+              <div class="skill-info">
+                <span>Redes (TCP/IP, VPN, Mikrotik)</span><span class="skill-pct">65%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+            </div>
+            <div class="skill-item" data-level="70">
+              <div class="skill-info">
+                <span>Hardware & Manutenção</span><span class="skill-pct">70%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="skill-cat-title"><i class="fas fa-tools"></i> Ferramentas & Sistemas</h3>
+          <div class="skill-items">
+            <div class="skill-item" data-level="80">
+              <div class="skill-info">
+                <span>Pacote Office / Google Workspace</span><span class="skill-pct">80%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+            </div>
+            <div class="skill-item" data-level="70">
+              <div class="skill-info">
+                <span>Windows / Linux (básico)</span><span class="skill-pct">70%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+            </div>
+            <div class="skill-item" data-level="65">
+              <div class="skill-info">
+                <span>CRM / WhatsApp Business</span><span class="skill-pct">65%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="skill-cat-title"><i class="fas fa-user-tie"></i> Soft Skills</h3>
+          <div class="tags-grid">
+            <span class="tag">Comunicação</span>
+            <span class="tag">Trabalho em Equipe</span>
+            <span class="tag">Resolução de Problemas</span>
+            <span class="tag">Proatividade</span>
+            <span class="tag">Atendimento ao Cliente</span>
+            <span class="tag">Aprendizado Contínuo</span>
+            <span class="tag">Organização</span>
+            <span class="tag">Adaptabilidade</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJETOS ===== -->
+  <section class="projetos" id="projetos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// projetos</span>
+        <h2 class="section-title">Meu Portfólio no GitHub</h2>
+        <p class="section-desc">Projetos desenvolvidos durante minha jornada de aprendizado em programação.</p>
+      </div>
+      <div class="projects-grid" id="projectsGrid">
+
+        <div class="project-card" data-aos="fade-up">
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-cut"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/LucasMacedoDev/LegacyBarber_LP.git" target="_blank" title="Ver no GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://lucasmacedodev.github.io/LegacyBarber_LP/" target="_blank" title="Ver ao vivo">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Landing Page - Legacy Barber</h3>
+          <p class="project-desc">Página de apresentação para barbearia Legacy Barber.</p>
+          <div class="project-tags">
+            <span class="p-tag">HTML</span>
+            <span class="p-tag">CSS</span>
+            <span class="p-tag">JavaScript</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-dumbbell"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/LucasMacedoDev/ironfit-gym-project.git" target="_blank" title="Ver no GitHub">
+                <i class="fab fa-github"></i>
+                <a href="https://lively-liger-e078cb.netlify.app/" target="_blank" title="Ver ao vivo">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Landing Page - IronFit Gym</h3>
+          <p class="project-desc">Página de apresentação para academia IronFit Gym.</p>
+          <div class="project-tags">
+            <span class="p-tag">JavaScript</span>
+            <span class="p-tag">HTML</span>
+            <span class="p-tag">CSS</span>
+          </div>
+        </div>
+
+         <div class="project-card" data-aos="fade-up" data-aos-delay="500">
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-gamepad"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/LucasMacedoDev/BurgerHouse_LP.git" target="_blank" title="Ver no GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://lucasmacedodev.github.io/BurgerHouse_LP/" target="_blank" title="Ver ao vivo">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Burger House - Landing Page</h3>
+          <p class="project-desc">Página de apresentação para o restaurante Burger House.</p>
+          <div class="project-tags">
+            <span class="p-tag">HTML</span>
+            <span class="p-tag">CSS</span>
+            <span class="p-tag">JavaScript</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-comments"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/LucasMacedoDev/chat_bot_wpp.git" target="_blank" title="Ver no GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Chat Bot para WhatsApp</h3>
+          <p class="project-desc">Bot de atendimento via WhatsApp para atendimento ao cliente.</p>
+          <div class="project-tags">
+            <span class="p-tag">Node.js</span>
+            <span class="p-tag">JavaScript</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-headset"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/LucasMacedoDev/LP-Telecom.git" target="_blank" title="Ver no GitHub">
+                <i class="fab fa-github"></i>
+
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Landing Page - Telecom</h3>
+          <p class="project-desc">Página de apresentação para a empresa Telecom.</p>
+          <div class="project-tags">
+            <span class="p-tag">HTML</span>
+            <span class="p-tag">CSS</span>
+            <span class="p-tag">JavaScript</span>
+          </div>
+        </div>
+
+   <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-laptop"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/LucasMacedoDev/LP_FluirDigital.git" target="_blank" title="Ver no GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+          
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Landing Page - Fluir Digital</h3>
+          <p class="project-desc">Página de apresentação para a empresa Fluir Digital.</p>
+          <div class="project-tags">
+            <span class="p-tag">HTML</span>
+            <span class="p-tag">CSS</span>
+            <span class="p-tag">JavaScript</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="projects-cta">
+        <a href="https://github.com/LucasMacedoDev" target="_blank" class="btn-outline">
+          <i class="fab fa-github"></i> Ver todos no GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIÊNCIA ===== -->
+  <section class="experiencia" id="experiencia">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// experiência</span>
+        <h2 class="section-title">Trajetória Profissional</h2>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Auxiliar Administrativo</h3>
+              <span class="timeline-badge current">Atual</span>
+            </div>
+            <p class="timeline-company"><i class="fas fa-building"></i> ConectJet Lagos Telecom</p>
+            <p class="timeline-period"><i class="fas fa-calendar"></i> Jul/2024 – Presente</p>
+            <ul class="timeline-list">
+              <li>Suporte técnico presencial e remoto (configuração de redes, autenticação de acesso e análise de conectividade)</li>
+              <li>Atendimento multicanal: telefone, WhatsApp, e-mail e sistema interno</li>
+              <li>Apoio administrativo: emissão de boletos, organização de chamados e controle de agenda técnica</li>
+              <li>Ferramentas: MK-AUT, IXC Software, Word, Excel e WhatsApp Business</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Técnico em Manutenção</h3>
+            </div>
+            <p class="timeline-company"><i class="fas fa-building"></i> NewJD — Manutenção de Computadores</p>
+            <ul class="timeline-list">
+              <li>Manutenção de computadores, notebooks e formatação de sistemas</li>
+              <li>Instalação de programas, antivírus e configuração de rede</li>
+              <li>Atendimento direto ao cliente e venda de periféricos</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTATO ===== -->
+  <section class="contato" id="contato">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// contato</span>
+        <h2 class="section-title">Vamos Conversar?</h2>
+        <p class="section-desc">Estou aberto a novas oportunidades, projetos e colaborações. Entre em contato!</p>
+      </div>
+      <div class="contato-grid">
+        <div class="contato-info">
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div class="contact-details">
+              <span class="contact-label">E-mail</span>
+              <a href="mailto:contato.lucasmacedodev@gmail.com">contato.lucasmacedodev@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+            <div class="contact-details">
+              <span class="contact-label">WhatsApp</span>
+              <a href="https://wa.me/5522988482126" target="_blank">(22) 98848-2126</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+            <div class="contact-details">
+              <span class="contact-label">LinkedIn</span>
+              <a href="https://linkedin.com/in/lucasmacedo-dev" target="_blank">lucasmacedo-dev</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fab fa-github"></i></div>
+            <div class="contact-details">
+              <span class="contact-label">GitHub</span>
+              <a href="https://github.com/LucasMacedoDev" target="_blank">LucasMacedoDev</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="contact-details">
+              <span class="contact-label">Localização</span>
+              <span>Araruama – RJ, Brasil</span>
+            </div>
+          </div>
+          <a href="curriculo.pdf" download class="btn-primary btn-download-cv">
+            <i class="fas fa-download"></i> Baixar Currículo (PDF)
+          </a>
+        </div>
+        <div class="contato-form">
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="nome">Nome</label>
+              <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required />
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="assunto">Assunto</label>
+              <input type="text" id="assunto" name="assunto" placeholder="Sobre o que deseja falar?" />
+            </div>
+            <div class="form-group">
+              <label for="mensagem">Mensagem</label>
+              <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem..." required></textarea>
+            </div>
+            <button type="submit" class="btn-primary btn-full">
+              <i class="fas fa-paper-plane"></i> Enviar Mensagem
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <a href="#hero" class="footer-logo">
+          <span class="logo-bracket">&lt;</span>LM<span class="logo-bracket">/&gt;</span>
+        </a>
+        <p class="footer-text">Desenvolvido por Lucas Macedo</p>
+        <div class="footer-socials">
+          <a href="https://github.com/lucasmacedo-dev" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/in/lucasmacedo-dev" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="mailto:contato.lucasmacedodev@gmail.com"><i class="fas fa-envelope"></i></a>
+          <a href="https://wa.me/5522988482126" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <p class="footer-copy">&copy; 2026 Lucas Macedo. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-top" id="backTop" aria-label="Voltar ao topo">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
